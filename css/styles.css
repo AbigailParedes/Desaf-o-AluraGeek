@@ -1,0 +1,253 @@
+/*estilos generales*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* header con el logo y la imagen*/
+.cabecera {
+ 
+    background-color: #03318C;
+   
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+    
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #d9d9d9;
+    margin: 0;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+  
+}
+
+img {
+    width: 30%;
+    height: auto;
+}
+.logo h1{
+    font-size: 20px;
+
+    
+}
+main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+section-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+} 
+
+.contenedor-form {
+    background-color: transparent;
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    padding: 30px 30px;
+    margin: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.contenedor-form h2 {
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.contenedor-form input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid #03318C;
+    border-radius: 25px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+#input_nombre,
+#input_precio,
+#input_url,
+#input_nombre::placeholder,
+#input_precio::placeholder,
+#input_url::placeholder {
+    font-size: 14px;
+    color: #03318C;
+}
+
+.botonera {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 0;
+    box-sizing: border-box;
+}
+
+.botonera input {
+    padding: 15px;
+    border: 2px solid #03318C;
+    color: #03318C;
+    font-size: 14px;
+    flex: 1;
+    cursor: pointer;
+}
+
+/*CONTENEDOR DE PRODUCTOS*/
+.seccion-productos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   
+
+}
+
+.seccion-productos h2{
+    margin-top: 15px;
+
+}
+.contenedor-productos {
+  
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    padding: 20px;
+    margin: 25px 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 3px 3px rgba(32,32,32,0.3);
+    overflow-y: auto; /* Solo scroll vertical */
+}
+
+.card {
+    background-color: #5D04D9;
+    width: 100%;
+    max-width: 150px;
+    height: 200px;
+    padding: 50px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap ;
+   
+    
+   
+
+    justify-content: space-between; 
+    padding: 10px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 1px 1px rgba(32,32,32,0.3);
+}
+
+.card img {
+    width: 100%;
+
+    height: 150px;
+}
+
+
+
+ .informacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+
+
+.card p {
+    font-size: 12px;
+    color: #FFFFFF;
+    text-align: left;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/*estilos del footer*/
+.pie {
+    background-color: #5D04D9;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 0;
+    font-size: 18px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.logo-pie {
+    display: flex;
+    align-items: center;
+    color: #d9d9d9;
+    margin-bottom: 0;
+}
+
+.logo-pie img {
+    width: 50px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.logo-pie h1 {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.pie p {
+    margin: 5px 0 0 0;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #d9d9d9;
+    font-family: "Montserrat", sans-serif;
+    display: inline-block;
+    font-weight: 500;
+    font-style: normal;
+}
