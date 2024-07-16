@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--estilos-->
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsivo.css"
+    <link rel="stylesheet" href="./css/reset.css"
+
 
     <!--fuentes de google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +19,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+
     <!--fuentes de google-->
     <title>Alura Geek</title>
 </head>
@@ -30,64 +35,52 @@
 
     <!-- caja de productos-->
     <main>
-        <section class="seccion-productos">
-            <h2>Mis productos</h2>
-            <div class=" contenedor-productos">
+        <div class="contenedores-secciones">
 
 
-                <div class="card">
-                    <img src="./assets/productos/producto 1.jpg" alt="">
-                    <p>Producto</p>
-                    <div class="informacion">
-                        <p>$ 150 ARS</p>
-                        <span></span>
-                    </div>
-
+            <section class="seccion-productos">
+                <div class="titulo-procontenedor">
+                    <h2>Mis productos</h2>
                 </div>
 
-
-
-                <div class="card">
-                    <img src="./assets/productos/producto 1.jpg" alt="">
-
-                    <p>Producto</p>
-
+                <div class="contenedor-productos" data-productos>
+                    <!-- <div class="card">
+                     <img src="./assets/productos/producto 1.jpg" alt="">
+                    <div class="card-title">
+                        <p>Producto</p>
+                    </div>
+                    
                     <div class="informacion">
                         <p>$ 150 ARS</p>
-                        
-                    </div>
+                        <img src="./assets/img/eliminar.png" alt="">
+                      
+                    </div> 
+                </div>-->
                 </div>
-
-          
-
-
-            </div>
+            </section>
 
 
-        </section>
-        <!-- formulario -->
-        <section class="seccion-form">
-            <div class="contenedor-form">
-                <h2> Agregar productos:</h2>
-                <form class="form-carga"="">
+            <!-- formulario -->
+            <section class="seccion-form">
+                <div class="contenedor-form">
+                    <h2> Agregar productos:</h2>
+                    <form class="form-carga" data-form>
 
 
-                    <input type="text" name="inputnombre" id="input_nombre" placeholder="Ingrese un producto...">
-                    <input type="text" name="intputprecio" id="input_precio" placeholder="Ingrese un precio...">
-                    <input type="text" name="inputurl" id="input_precio" placeholder="coloque la imagen...">
+                        <input type="text" name="inputnombre" id="input_nombre" data-nombre placeholder="Ingrese un producto...">
+                        <input type="text" name="intputprecio" id="input_precio" data-precio placeholder="Ingrese un precio...">
+                        <input type="text" name="inputurl" id="input_precio"  data-imagen placeholder="coloque la imagen...">
 
-                    <div class="botonera">
-                        <input type="submit" name="Enviar" id="input_enviar" value="Enviar">
-                        <input type="reset" name="Limpiar" id="input_limpiar" value="limpiar">
-                    </div>
+                        <div class="botonera">
+                            <input type="submit" name="Enviar" id="input_enviar" value="Enviar">
+                            <input type="reset" name="Limpiar" id="input_limpiar" value="limpiar">
+                        </div>
+                            <p class="error"></p>
+                    </form>
+                </div>
+            </section>
 
-
-
-                </form>
-            </div>
-        </section>
-
-
+        </div>
 
     </main>
 
@@ -104,7 +97,9 @@
 
     </footer>
 
-
+    <!-- <script src="./js/conexionApi.js"></script> -->
+    <script src="./js/mostrarProductos.js " type="module"></script>
+    <script src="./js/script.js "></script>
 
 </body>
 

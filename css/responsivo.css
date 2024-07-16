@@ -1,0 +1,57 @@
+@media (max-width: 430px) {
+ 
+
+    .cabecera{
+        display: flex;
+        min-width: 530px;
+        align-items:center ;
+    }
+    .logo img {
+        width: 80px;
+        height: auto;
+        margin: auto auto;
+      
+    }
+    .logo h1{
+        font-size: 12px;
+    
+        
+    }
+    titulo-procontenedor{
+        margin:  auto;
+        font-size: 10px;
+    
+    }
+
+    .contenedores-secciones{
+
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: 100%;
+        
+    }
+    .contenedor-form input{
+        display: flex;
+        flex-direction: column;
+        min-width: 200px
+    }
+        .contenedor-form{
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            margin-bottom: 35px;
+        }
+
+        
+        .seccion-productos{
+
+            margin-top: 15px;
+        }
+        .pie{
+            width: 100%;
+            min-width: 530px;
+        }
+
+
+
+}

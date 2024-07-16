@@ -1,0 +1,70 @@
+{
+  "productos": [
+    {
+      "nombre": "Cartuchera",
+      "precio": "50",
+      "imagen": "https://acdn.mitiendanube.com/stores/407/537/products/1531224-28afb6baa44dab09b417099137396579-640-0.jpg",
+      "id": "1"
+    },
+    {
+      "nombre": "Cartuchera",
+      "precio": "50",
+      "imagen": "https://samsonite.com.ar/cdn/shop/files/92fd08f01d099c957badc3b805129cee413c768175e3ffe141c3e8b500173d88_2000x.jpg?v=1686953099",
+      "id": "2"
+    },
+    {
+      "nombre": "Cartuchera",
+      "precio": "50",
+      "imagen": "https://sublitextil.com.ar/wp-content/uploads/2019/02/cartuchera-interior3.jpg",
+      "id": "3"
+    },
+    {
+      "nombre": "Cartuchera",
+      "precio": "50",
+      "imagen": "https://acdn.mitiendanube.com/stores/902/324/products/cartuchera-cara-amarilla-portada-dee1b1a5e3105e5df616983428265337-1024-1024.jpg",
+      "id": "4"
+    },
+    {
+      "id": "60bd",
+      "nombre": "Funko Inu",
+      "precio": "450",
+      "imagen": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTwZhMcaVrDo-1xcKUt2XnXCDSKn3t6s83IWG9tBi54WlG7GX94BelhcVJz_YsfpE2EsoajARjYTzuLWDoi8w37V7zAMCb1ljdZpom87wE&usqp=CAE"
+    },
+    {
+      "id": "3575",
+      "nombre": "Funko Kagome",
+      "precio": "450",
+      "imagen": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQgazdoCoxYE2vFSkHe_EfJIUlyBToQAPAvIX3pAi72c8eCFV7y1aex2iCSIccV6lHEhWCtf5K_ROcIgBBJvjupXAhx5HFBberQBqYSiYIMlugEH0FL6t7vWA&usqp=CAE"
+    },
+    {
+      "id": "ddc1",
+      "nombre": "funko Kagome",
+      "precio": "500",
+      "imagen": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQgazdoCoxYE2vFSkHe_EfJIUlyBToQAPAvIX3pAi72c8eCFV7y1aex2iCSIccV6lHEhWCtf5K_ROcIgBBJvjupXAhx5HFBberQBqYSiYIMlugEH0FL6t7vWA&usqp=CAE"
+    },
+    {
+      "id": "ace8",
+      "nombre": "Shippo y kirara funko",
+      "precio": "750",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaY1ER71TZoG4vLsqx3oTR_ZvSauzyxL3TVQ&s"
+    },
+    {
+      "id": "861c",
+      "nombre": "Funko Sesshomaru",
+      "precio": "500",
+      "imagen": "https://www.distritomax.com/cdn/shop/products/SSESHOMARU2_650x847.jpg?v=1653492579"
+    },
+    {
+      "id": "ea4b",
+      "nombre": "Funko Sango",
+      "precio": "450",
+      "imagen": "https://acdn.mitiendanube.com/stores/689/020/products/1301-6355d8f9312f1fc62716863472193891-480-0.png"
+    },
+    {
+      "id": "f194",
+      "nombre": "Funko sango",
+      "precio": "600",
+      "imagen": "https://acdn.mitiendanube.com/stores/689/020/products/1301-6355d8f9312f1fc62716863472193891-480-0.png"
+    }
+  ]
+}

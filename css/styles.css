@@ -1,20 +1,35 @@
 /*estilos generales*/
 * {
-    padding: 0;
-    margin: 0;
+   
     box-sizing: border-box;
 }
-
 body {
     font-family: "Press Start 2P", system-ui;
     font-weight: 400;
     font-style: normal;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+  
 }
+
+.error{
+    display: block;
+    color: red;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+        margin-right: 30px;
+    
+}
+
 
 /* header con el logo y la imagen*/
 .cabecera {
  
-    background-color: #03318C;
+    background-color: #30559e;
    
     font-family: "Press Start 2P", system-ui;
     font-weight: 400;
@@ -51,42 +66,21 @@ img {
 
     
 }
+
 main {
+    width: 100%;
+    min-width: 500px;
+    height: auto;
+}
+
+
+.contenedores-secciones{
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-    width: 100%;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-section-form {
-    display: flex;
     flex-direction: row;
-    justify-content: space-around;
-} 
-
-.contenedor-form {
-    background-color: transparent;
-    width: 100%;
-    max-width: 500px;
-    height: 500px;
-    padding: 30px 30px;
-    margin: 30px 15px;
-    display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
-    box-sizing: border-box;
-}
-
-.contenedor-form h2 {
-    display: inline-block;
-    padding: 10px;
-    text-align: center;
-    margin-bottom: 10px;
-    color: #000000;
-}
+    
+} 
 
 .contenedor-form input {
     padding: 10px;
@@ -99,107 +93,194 @@ section-form {
     box-sizing: border-box;
 }
 
+ .seccion-productos{
+    display: flex;
+    flex-direction: column;
+} 
+
+/* ESTILO DE LA SECCOIN PARA QUE ESTE SIMILAR A LA SECCION DE PRODUCTOS*/
+.seccion-form{
+    display: flex;
+    flex-direction: column;
+    
+} 
+
+/*estilo CONTENEDOR DEL FORMULARIO*/
+.contenedor-form {
+    background-color: transparent;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    max-height: 250px;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+   
+  
+}
+
+.contenedor-form h2 {
+    padding: 10px;
+    text-align: center;
+    
+    color: #000000;
+    font-size: 15px;
+}
+
+
+.contenedor-form input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid #03318C;
+    border-radius: 25px;
+    font-size: 14px;
+   
+}
+/*estilo del placeholder del form*/
 #input_nombre,
 #input_precio,
 #input_url,
 #input_nombre::placeholder,
 #input_precio::placeholder,
 #input_url::placeholder {
-    font-size: 14px;
+    font-size: 10px;
     color: #03318C;
 }
-
+/*estilo botones del formulario*/
 .botonera {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    justify-content: center;
+    gap: 10px;
     width: 100%;
     max-width: 400px;
-    margin: 20px 0;
     box-sizing: border-box;
 }
 
+
+
 .botonera input {
-    padding: 15px;
+    padding: 10px;
     border: 2px solid #03318C;
-    color: #03318C;
-    font-size: 14px;
+    color: #00194b;
+    font-size: 10px;
     flex: 1;
     cursor: pointer;
-}
+} 
+
 
 /*CONTENEDOR DE PRODUCTOS*/
-.seccion-productos{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-   
 
-}
-
-.seccion-productos h2{
-    margin-top: 15px;
+.titulo-procontenedor{
+    margin: 30px auto;
+    font-size: 10px;
 
 }
 .contenedor-productos {
   
-    width: 100%;
+    width:100%;
     max-width: 500px;
     height: 500px;
-    padding: 20px;
-    margin: 25px 15px;
+    padding: 15px;
+    margin: 15px 15px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 5px;
     box-sizing: border-box;
     box-shadow: 1px 1px 3px 3px rgba(32,32,32,0.3);
-    overflow-y: auto; /* Solo scroll vertical */
+    overflow:auto; 
+}
+/* Estilos del ScrollBar para motores Webkit y blink (Chrome, Safari, Opera... )*/
+/*los saque de las pagina: https://www.campusmvp.es/recursos/post/como-personalizar-los-estilos-css-de-las-barras-de-scroll.aspx*/
+
+.contenedor-productos::-webkit-scrollbar {
+    -webkit-appearance: none;
 }
 
+.contenedor-productos::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+.contenedor-productos::-webkit-scrollbar-button:increment,.contenedor-productos::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.contenedor-productos::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.contenedor-productos::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+.contenedor-productos::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
+
+/*estilo general de la card e imagen*/
 .card {
-    background-color: #5D04D9;
+    background-color: #8962be;
     width: 100%;
     max-width: 150px;
-    height: 200px;
+    max-height: 200px;
     padding: 50px;
 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap ;
    
-    
-   
-
     justify-content: space-between; 
     padding: 10px;
     border-radius: 15px;
-    box-sizing: border-box;
+    
     box-shadow: 3px 3px 1px 1px rgba(32,32,32,0.3);
 }
 
 .card img {
     width: 100%;
-
     height: 150px;
 }
-
-
-
- .informacion {
+/*estilo contenedor de informacion de la card tanto nombre como datos*/
+.card-contenido{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-  
+    align-items: flex-start;
+    margin-top: 5px;
+
 }
-
-
 .card p {
     font-size: 12px;
     color: #FFFFFF;
     text-align: left;
     margin: 0;
+ 
     font-family: 'Montserrat', sans-serif;
+}
+
+/*estilo pie de la card*/
+ .informacion {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  
+}
+
+.informacion img {
+    width: 15px;
+    height:15px;
+    margin-left: 80px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 
@@ -208,20 +289,30 @@ section-form {
 .pie {
     background-color: #5D04D9;
     width: 100%;
-    height: auto;
-    padding: 20px;
+   min-height: 150px;
+    margin-top: auto;
+   
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    position: absolute;
-    bottom: 0;
     font-size: 18px;
     font-family: "Press Start 2P", system-ui;
     font-weight: 400;
     font-style: normal;
 }
+.pie p {
+    margin: 5px 0 0 0;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #d9d9d9;
+    font-family: "Montserrat", sans-serif;
+    display: inline-block;
+    font-weight: 500;
+    font-style: normal;
+}
+
 
 .logo-pie {
     display: flex;
@@ -241,13 +332,3 @@ section-form {
     margin-right: 5px;
 }
 
-.pie p {
-    margin: 5px 0 0 0;
-    font-size: 15px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #d9d9d9;
-    font-family: "Montserrat", sans-serif;
-    display: inline-block;
-    font-weight: 500;
-    font-style: normal;
-}
